@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for ssafyai-team06-backend on 2025-07-02T14:04:27+09:00
+# fly.toml app configuration file generated for ssafyai-team06-backend on 2025-07-02T16:06:41+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'ssafyai-team06-backend'
-primary_region = 'nrt'
+primary_region = 'sjc'
 
 [build]
 

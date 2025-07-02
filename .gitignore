@@ -1,5 +1,6 @@
 .env*
 chroma_db
+chroma_db/
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
@@ -373,4 +374,5 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,python,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/macos,python,visualstudiocodechroma_db/
+chroma_db/
