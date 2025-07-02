@@ -49,8 +49,6 @@ def load_namuwiki_docs(folder_path: str = "worldcup_incidents") -> List[Document
     print(f"총 {len(namu_docs)}개의 나무위키 문서가 수동으로 추가되었습니다.")
     return namu_docs
 
-wiki_docs = load_wikipedia_docs()
-namu_docs = load_namuwiki_docs("worldcup_incidents")
 
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter

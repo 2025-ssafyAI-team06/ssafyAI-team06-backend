@@ -10,6 +10,7 @@ from langchain_upstage import ChatUpstage, UpstageEmbeddings
 from langchain.schema import Document
 from pydantic import BaseModel
 from embed import build_retriever
+from embed import load_namuwiki_docs, load_wikipedia_docs
 
 load_dotenv()
 
@@ -35,7 +36,9 @@ chat_upstage = ChatUpstage(model="solar-pro")
 @app.on_event("startup")
 async def startup_event():
     global retriever
-    retriever = build_retriever()  # 서버 시작 시 1회 실행
+    wiki_docs = load_wikipedia_docs()
+    namu_docs = load_namuwiki_docs("worldcup_incidents")
+    retriever = build_retriever(wiki_docs, namu_docs)  # 서버 시작 시 1회 실행
     print("🔁 Retriever initialized")
 
 @app.post("/chat")
