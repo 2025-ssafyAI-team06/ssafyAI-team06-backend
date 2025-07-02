@@ -19,9 +19,6 @@ def build_rag_chain() -> Runnable:
 
     return rag_chain
 
-rag_chain = build_rag_chain()
-
-from langchain.schema import Document
 
 def retrieve(state: dict, retriever) -> dict:
     print("---RETRIEVE---")
